@@ -1,0 +1,5 @@
+# Paste to fetch keys
+sudo salt 'server' cmd.run 'cat /etc/wireguard/keys/privatekey'
+sudo salt 'client' cmd.run 'cat /etc/wireguard/keys/publickey'
+sudo salt 'client' cmd.run 'cat /etc/wireguard/keys/privatekey'
+sudo salt 'server' cmd.run 'cat /etc/wireguard/keys/publickey'
