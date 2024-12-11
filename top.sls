@@ -1,10 +1,13 @@
 base:
   '*':
     - wireguard
-    - keygen
 
-  'G@role:client':
-    - config.client  # Apply client configuration
+  'client':
+    - keygen.client_gen
+    - keyfetch.client_fetch
+    - config.client
 
   'server':
-    - config.server  # Apply server configuration
+    - keygen.server_gen
+    - keyfetch.server_fetch
+    - config.server
